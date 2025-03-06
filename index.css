@@ -1,0 +1,14 @@
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .btn-toggle {
+    background-color: white;
+    color: black;
+}

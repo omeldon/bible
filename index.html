@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes For You</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center">
+        <h2>Find a Bible Verse for Your Emotion</h2>
+        <button id="toggleTheme" class="btn btn-secondary">🌙</button>
+    </div>
+    
+    <div class="mb-3">
+        <label for="emotionSelect" class="form-label">Select Emotion:</label>
+        <select id="emotionSelect" class="form-select">
+            <option value="">-- Choose an Emotion --</option>
+            <option value="happiness">Happiness</option>
+            <option value="love">Love</option>
+            <option value="excitement">Excitement</option>
+            <option value="gratitude">Gratitude</option>
+            <option value="pride">Pride</option>
+            <option value="serenity">Serenity</option>
+            <option value="amusement">Amusement</option>
+            <option value="joy">Joy</option>
+            <option value="hope">Hope</option>
+            <option value="contentment">Contentment</option>
+            <option value="sadness">Sadness</option>
+            <option value="anger">Anger</option>
+            <option value="fear">Fear</option>
+            <option value="disgust">Disgust</option>
+            <option value="jealousy">Jealousy</option>
+            <option value="guilt">Guilt</option>
+            <option value="shame">Shame</option>
+            <option value="frustration">Frustration</option>
+            <option value="despair">Despair</option>
+            <option value="anxiety">Anxiety</option>
+            <option value="confusion">Confusion</option>
+            <option value="surprise">Surprise</option>
+            <option value="empathy">Empathy</option>
+            <option value="awe">Awe</option>
+            <option value="relief">Relief</option>
+            <option value="nostalgia">Nostalgia</option>
+            <option value="regret">Regret</option>
+            <option value="envy">Envy</option>
+            <option value="compassion">Compassion</option>
+        </select>
+    </div>
+    <button class="btn btn-primary w-100" onclick="searchVerse()">Search</button>
+    
+    <div class="mt-4 card p-3" id="verseDisplay"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
